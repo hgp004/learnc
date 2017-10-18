@@ -9,6 +9,7 @@
 #include "B1.h"
 #include "A.h"
 #include "Child01.h"
+#include "Child02.h"
 using namespace std;
 
 void function(int, int, int);
@@ -33,6 +34,10 @@ void run(Parent01 *p)
 {
 	p->func();
 }
+void run2(Parent02 *p)
+{
+	p->func();
+}
 int _tmain(int argc, _TCHAR* argv[])
 {
 	Parent01 parent1;
@@ -43,6 +48,8 @@ int _tmain(int argc, _TCHAR* argv[])
 	child01.Parent01::func();//child01.func();ÎÞ·¨Ö´ÐÐ
 	child01.func(1);
 	child01.func(1, 2);
+	Child02 child02;
+	run2(&child02);
 	run(&parent1);
 	run(&child01);
 	printf("---------");

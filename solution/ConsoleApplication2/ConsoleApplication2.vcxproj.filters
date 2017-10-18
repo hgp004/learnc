@@ -57,6 +57,12 @@
     <ClInclude Include="Child01.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Child02.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Parent02.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -96,6 +102,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Child01.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Child02.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Parent02.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
