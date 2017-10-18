@@ -39,6 +39,24 @@
     <ClInclude Include="MyArray.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="A.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="B.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="B1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="B2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Parent01.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Child01.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -60,6 +78,24 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="MyArray.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="A.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="B.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="B1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="B2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Parent01.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Child01.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

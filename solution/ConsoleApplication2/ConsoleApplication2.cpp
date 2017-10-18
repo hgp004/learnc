@@ -6,6 +6,9 @@
 #include "FriendA.h"
 #include "MyArray.h"
 #include <iostream>
+#include "B1.h"
+#include "A.h"
+#include "Child01.h"
 using namespace std;
 
 void function(int, int, int);
@@ -16,12 +19,45 @@ MyArray getMyArray1();
 int dw::age = 10;
 void print(FriendA *ptFa, FriendB *ptFb, int a)
 {
+	FriendA fa;
 	ptFa->A = 10;//print是FriendA的友元函数，可以访问私有数据成员A
 	//ptFb->B//print不是FriendB的友元函数，无法访问私有数据成员B
 }
+void print(B* pb)
+{
+	B1 b1;
+	pb->b;
+}
+typedef void(*FuncP)(B*);
+void run(Parent01 *p)
+{
+	p->func();
+}
 int _tmain(int argc, _TCHAR* argv[])
 {
-	
+	Parent01 parent1;
+	parent1.func();
+	parent1.func(1);
+	parent1.func(1, 2);
+	Child01 child01;
+	child01.Parent01::func();//child01.func();无法执行
+	child01.func(1);
+	child01.func(1, 2);
+	run(&parent1);
+	run(&child01);
+	printf("---------");
+
+	void(*funcp)(B*);//定义声明函数指针变量
+	funcp = print;
+	A a;
+	a.B1::b=1;
+	a.B2::b = 2;
+	a.woshishui();
+	B * bp = &a;
+	funcp(bp);
+	FuncP funcp2=print;
+	funcp2(bp);
+	bp->woshishui();
 	int *p = new int[2];
 	*p = 1;
 	*(p + 1) = 2;
